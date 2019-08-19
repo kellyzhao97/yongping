@@ -2698,8 +2698,7 @@ input, select, textarea {
 /* Banner */
 
 	.carousel,
-	.carousel-inner,
-	.carousel-inner .item {
+	.carousel .row{
 	  	height: 100%;
 	}
 
