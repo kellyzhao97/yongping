@@ -10,16 +10,17 @@
 	<title>千古博南 味道永平</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
 	<link rel="stylesheet" href="assets/css/main.css" />
-	 <!--****** BootStrap CSS **********-->
-	 <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
-	 <!--/*-----Slick Slider CSS-----*/-->
-	 <link href="assets/slick/slick.css" rel="stylesheet" type="text/css"/>
-	 <link href="assets/slick/slick-theme.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<style>
 		img.displayed {
 			margin-top: auto;
 			margin-bottom: auto;
+		}
+
+		.mySlides {
+			display: none;
 		}
 	</style>
 </head>
@@ -65,29 +66,27 @@
 
 	<!-- Banner -->
 	<div id="banner">
-		 <!--******************Single Item Slide***************-->
-		 <div class="carousel">
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="row">
-						<div class="full-slide">
-							<div>  <img src="images/1.jpg" class="img-responsive" alt=""/> </div>
-							<div>  <img src="images/2.jpg" class="img-responsive" alt=""/> </div>
-							<div>  <img src="images/3.jpg" class="img-responsive" alt=""/> </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> 
-		<!--******************Single Item Slide***************-->
-		 <!--****Jquery**********-->
-		 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<div class="w3-content w3-section" style="max-width:500px">
+			<img class="mySlides" src="images/1.jpg" style="width:100%">
+			<img class="mySlides" src="images/2.jpg" style="width:100%">
+			<img class="mySlides" src="images/3.jpg" style="width:100%">
+		</div>
+		<script>
+			var myIndex = 0;
+			carousel();
 
-		 <!--****Slick Slider Js*****-->
-		 <script src="assets/slick/slick.min.js" type="text/javascript"></script>
- 
-		 <!-- Custom JS --->
-		 <script src="assets/js/plugins.js" type="text/javascript"></script>
+			function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				myIndex++;
+				if (myIndex > x.length) { myIndex = 1 }
+				x[myIndex - 1].style.display = "block";
+				setTimeout(carousel, 3000); // Change image every 2 seconds
+			}
+		</script>
 
 		<header>
 			<!--<h2>Arcana: <em>A responsive site template freebie by <a href="http://html5up.net">HTML5 UP</a></em>
@@ -100,7 +99,7 @@
 	<section class="wrapper style2">
 		<div class="container">
 			<header class="major">
-				<h2>來永平的三個理由
+				<h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 30px;">來永平的三個理由
 					<br>The three reasons why you should visit Yongping
 				</h2>
 			</header>
@@ -115,11 +114,13 @@
 					<div class="box highlight">
 						<a href="#" class="image up"><img src="images/r1.png" alt="" /></a>
 						<div class="firstinner">
-							<h3>重踏古道 體驗消失的馬幫文化<br>
+							<h3 style="font-family:KaiTi">重踏古道 體驗消失的馬幫文化<br>
 							</h3>
-							<h3 style="font-weight: lighter">Stepping on the ancient road, experiencing the disappearing
+							<p
+								style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 16px;">
+								Stepping on the ancient road, experiencing the disappearing
 								caravan culture
-							</h3>
+							</p>
 						</div>
 					</div>
 				</section>
@@ -127,10 +128,12 @@
 					<div class="box highlight">
 						<a href="#" class="image up"><img src="images/r2.png" alt="" /></a>
 						<div class="firstinner">
-							<h3>中國最大回族村 感受民族融合<br>
+							<h3 style="font-family: DFKai-sb">中國最大回族村 感受民族融合<br>
 							</h3>
-							<h3 style="font-weight: lighter">China's largest Hui village, feel the national integration
-							</h3>
+							<p
+								style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 16px;">
+								China's largest Hui village, feel the national integration
+							</p>
 						</div>
 					</div>
 				</section>
@@ -138,15 +141,17 @@
 					<div class="box highlight">
 						<a href="#" class="image up"><img src="images/r3.png" alt="" /></a>
 						<div class="firstinner"></div>
-						<h3>回歸自然 讓原始森林洗滌心靈<br>
-						</h3>
-						<h3 style="font-weight: lighter">Getting back to nature, spend mindful time in the woods
-						</h3>
+							<h3 style="font-family: DFKai-sb">回歸自然 讓原始森林洗滌心靈<br>
+							</h3>
+							<p
+								style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 16px;">
+								Getting back to nature, spend mindful time in the woods
+							</p>
+						</div>
 					</div>
+				</section>
 			</div>
-	</section>
-	</div>
-	</div>
+		</div>
 	</section>
 
 	<!-- Youtube -->
