@@ -1,6 +1,6 @@
-.carousel .carousel-item {
-    width: 100%;
+.carousel .carousel-item {   
     height: 100vh;
+    max-height:300px;
     background-size: cover;
     background-position: center;
 }
@@ -13,8 +13,16 @@
     background-image: url(images/核2.png);
 }
 
-.carousel .carousel-item:last-of-type {
+.carousel .carousel-item:nth-of-type(3) {
     background-image: url(images/核3.png);
+}
+
+.carousel .carousel-item:nth-of-type(4) {
+    background-image: url(images/核4.png);
+}
+
+.carousel .carousel-item:last-of-type {
+    background-image: url(images/核5.png);
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
